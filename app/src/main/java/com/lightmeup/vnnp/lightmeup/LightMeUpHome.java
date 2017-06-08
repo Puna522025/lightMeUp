@@ -446,7 +446,7 @@ public class LightMeUpHome extends AppCompatActivity implements View.OnClickList
     protected void onStart() {
         super.onStart();
         // on starting the app get the camera params
-        //initCamera();
+        initCamera();
     }
 
     private void setTextStyle(boolean checked) {
