@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Applying theme to Switch in settings screen-->
+    <style name="SettingsSwitch">
+        <!-- Active thumb color & Active track color(30% transparency) for Switch compat -->
+        <item name="colorControlActivated">#E6D300</item>
+    </style>
+
+</resources>

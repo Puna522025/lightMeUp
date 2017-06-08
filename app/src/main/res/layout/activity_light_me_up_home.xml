@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="com.lightmeup.vnnp.lightmeup.LightMeUpHome">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical"
+        tools:context="com.lightmeup.vnnp.lightmeup.LightMeUpHome">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/diagonal">
+
+            <ImageView
+                android:id="@+id/owlImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/owl" />
+
+            <RelativeLayout
+                android:id="@+id/textLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/owlImage"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/txtflashlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="FlashLight"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="28sp" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchComponent"
+                    android:theme="@style/SettingsSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:id="@+id/txtScreenLight"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="ScreenLight"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#0B121B">
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp">
+
+        <com.lightmeup.vnnp.lightmeup.RoundedView
+            android:id="@+id/roundedView"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imageControl"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/offstateblack">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+</FrameLayout>
